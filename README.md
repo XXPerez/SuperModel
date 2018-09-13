@@ -1,8 +1,9 @@
 # SuperModel
 SuperModel is based on avenirer project and extended to allow more functionallity 
-Avenirer/CodeIgniter-MY_Model 
 
-It's a simple ORM that can be used for small and large projects, allowing you to write fewer lines of code. 
+https://github.com/avenirer/CodeIgniter-MY_Model
+
+SuperModel is a simple ORM that can be used for small and large projects, allowing you to write fewer lines of code. 
 It have a simple and clear code, but also powerfull. 
 
 Whith a simple declaration inside a model, you can: 
@@ -24,4 +25,6 @@ Whith a simple declaration inside a model, you can:
 * Support for max, min, count, count distinct, sum, and other mysql functions over allowed fields.
 * Fields object, setters & getters
 
-Supermodel does not replace codeigniter ActiveRecord (DB_query_builder), Supermodel uses Codeigniter ActiveRecord.
+Supermodel extends Codeigniter ActiveRecord, does not replace it.
+
+Library can be found in application/core/SuperModel.php
