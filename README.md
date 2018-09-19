@@ -28,3 +28,5 @@ Whith a simple declaration inside a model, you can:
 Supermodel extends Codeigniter ActiveRecord, does not replace it.
 
 Library can be found in application/core/SuperModel.php
+
+Example and manual:  http://www.4amics.com/SuperModel/SuperModel/www/sdemo/
