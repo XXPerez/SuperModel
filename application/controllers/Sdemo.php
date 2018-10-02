@@ -109,7 +109,7 @@ exit;
         }
 
         // Obtain results
-        $result = $this->CityModel->searchAllPaginate($selectFields, $filter, $pageNum, DEFAULT_QUERY_OFFSET, $fieldOrd, false);
+        $result = $this->CityModel->searchAllPaginate($selectFields, $filter, $pageNum, DEFAULT_QUERY_OFFSET, $fieldOrd, $defaultUrl);
 
         $this->load->view('supermodel/index', array('view' => 'listtables', 'data' => $result));
     }

@@ -209,10 +209,18 @@ class SuperModel extends CI_Model
                     break;
                     case "char":
                     case "varchar":
+                    case "tinytext":
                     case "text":
+                    case "mediumtext":
+                    case "longtext":
+                    case "json":
+                    case "date":
+                    case "time":
+                    case "year":
                     case "timestamp":
                     case "datetime":
-                    case "date":
+                    case "enum":
+                    case "set":
                         $myfields[$val->name] = $default?$val->default:(string) "a";
                     break;
                     default:

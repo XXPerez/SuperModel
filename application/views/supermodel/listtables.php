@@ -1,3 +1,6 @@
+<?php
+$requestUri = $_SERVER['REQUEST_SCHEME'].':'.($_SERVER['SERVER_PORT']!='80'?$_SERVER['SERVER_PORT']:'').'//'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+?>
         <div id="content_inner">
             <h3>ListTables</h3>
             <hr>
@@ -11,7 +14,7 @@
                     <table>
                         <tr>
                             <?php foreach ($data->result[0] as $key => $fields) : ?>
-                            <th><a href="<?php echo setCurrentUrlOrder($_SERVER['REQUEST_URI'],$key)?>"><?php echo $key; ?></a></th>
+                            <th><a href="<?php echo setCurrentUrlOrder($requestUri,$key)?>"><?php echo $key; ?></a></th>
                             <?php endforeach; ?>
                         </tr>
                         <?php foreach ($data->result as $key => $record) : ?>
