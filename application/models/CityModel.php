@@ -22,6 +22,13 @@ class CityModel extends MY_Model
         $this->has_one['country'] = array('CountryModel', 'CountryCode', 'Code');
     }
 
+    public function getDataWithCountry()
+    {
+        $result = $this->with_country(array('fields'=>'*'))->getAll();
+        return $result;
+    }
+
+
     public function setCustomFilterPerCountryName($val, $field = '', $cond = 'eq', $andOr = 'and', $alias = 'country')
     {
         $this->dbjoin("country as $alias","$alias.Code = city.CountryCode",$andOr);

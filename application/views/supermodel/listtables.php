@@ -1,5 +1,5 @@
 <?php
-$requestUri = $_SERVER['REQUEST_SCHEME'].':'.($_SERVER['SERVER_PORT']!='80'?$_SERVER['SERVER_PORT']:'').'//'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$requestUri = $_SERVER['REQUEST_SCHEME'].':'.'//'.$_SERVER['HTTP_HOST'].($_SERVER['SERVER_PORT']!='80'?':'.$_SERVER['SERVER_PORT']:'').$_SERVER['REQUEST_URI'];
 ?>
         <div id="content_inner">
             <h3>ListTables</h3>

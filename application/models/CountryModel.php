@@ -13,7 +13,7 @@ class CountryModel extends MY_Model
     public function __construct()
     {
         parent::__construct();
-        $this->has_one['countryinfo'] = array('CountryinfoModel', 'Code', '_id');
+        //$this->has_one['countryinfo'] = array('CountryinfoModel', 'Code', '_id');
     }
 
 }

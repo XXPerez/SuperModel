@@ -13,8 +13,9 @@ class Sdemo extends CI_Controller
     {
         $this->load->model('CityModel');
 
-$this->CityModel->fields('City.Name as CityName, City.CountryCode as CountryCode, Country.Name as CountryName');
-$this->CityModel->dbJoin('Country','country.Code = City.CountryCode');
+$result = $this->CityModel->getDataWithCountry();
+//$this->CityModel->fields('City.Name as CityName, City.CountryCode as CountryCode, Country.Name as CountryName');
+//$this->CityModel->dbJoin('Country','country.Code = City.CountryCode');
 
 //$this->CityModel->fields('FUNCTION CONCAT(Name," (",CountryCode,")") as CityAndCountry, Info->"$.Population" as Population');
 //$this->CityModel->orderBy('Population', 'DESC');
@@ -25,7 +26,7 @@ $this->CityModel->dbJoin('Country','country.Code = City.CountryCode');
 //$this->CityModel->fields('*sum*','Population');
 //$this->CityModel->fields('CountryCode');
 //$this->CityModel->groupBy('CountryCode');
-$result = $this->CityModel->getAll();
+//$result = $this->CityModel->getAll();
 //$this->CityModel->fields('*sum*','Population');
 //$this->CityModel->fields('FUNCTION CONCAT(District," (",CountryCode,")") as DistrictAndCountry');
 //$this->CityModel->groupBy('DistrictAndCountry');

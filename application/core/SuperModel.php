@@ -154,9 +154,10 @@ class SuperModel extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        if (isset($_GET['debug']) && $_GET['debug'] == 'true') {
+        if (!defined('DEBUG') && isset($_GET['debug']) && $_GET['debug'] == 'true') {
             define('DEBUG', true);
-        } else {
+        }
+        if (!defined('DEBUG')) {
             define('DEBUG', false);
         }
         $this->{$this->table} = new stdClass();
