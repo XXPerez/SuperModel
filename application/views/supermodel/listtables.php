@@ -4,6 +4,14 @@ $requestUri = $_SERVER['REQUEST_SCHEME'].':'.'//'.$_SERVER['HTTP_HOST'].($_SERVE
         <div id="content_inner">
             <h3>ListTables</h3>
             <hr>
+            ListTables is a simple datatable using all the power of SuperModel:
+            <ul>
+                <li>Search text in any field (using filters)</li>
+                <li>Pagination</li>
+                <li>Change order, click on each column name</li>
+            </ul>
+            <br/>
+            <br/>
             <form name="find" action="" method="get">
                 <div id="content-inner-2">
                     <label>Filter by : </label>

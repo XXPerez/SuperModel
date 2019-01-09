@@ -2679,7 +2679,7 @@ class SuperModel extends CI_Model
             if (isset($this->orderAndFilterFieldsSubstitution[$field])) {
                 $filterlineField = $this->orderAndFilterFieldsSubstitution[$field];
                 if (is_array($filterlineField)) {
-                    $this->dbjoin($filterlineField[1], $filterlineField[2], $andOr);
+                    $this->dbJoin($filterlineField[1], $filterlineField[2], $andOr);
                     $hasJoins = true;
                     $filterlineField = $filterlineField[0];
                 }
@@ -2870,7 +2870,7 @@ class SuperModel extends CI_Model
     }
 
     /**
-     * dbjoin - Permite hacer joins de tablas, pero evitando duplicados.
+     * dbJoin - Permite hacer joins de tablas, pero evitando duplicados.
      * @param type $table
      * @param type $cond
      * @param type $type

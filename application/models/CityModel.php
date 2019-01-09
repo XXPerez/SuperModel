@@ -11,8 +11,7 @@ class CityModel extends MY_Model
         'CityID' => 'city.ID',
         'CityName' => 'city.Name',
         'CountryCode' => 'city.CountryCode',
-        //'CountryName' => array('country.Name','coutry','country.Code = city.CountryCode'),
-        'searchall' => 'city.ID||city.Name||CountryCode||@CountryName',
+        'searchall' => 'CityID||city.Name||CountryCode||@CountryName',
         '@CountryName' => array('PerCountryName', 'country.Name', 'country')
     );
 

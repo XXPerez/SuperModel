@@ -117,6 +117,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li class="list-group-item"><strong>Compose a Query</strong></li>
                         </ul>
                         <div class="list-group">
+                            <a class="list-group-item list-group-item-action<?php echo $view=='model'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/model/">Define a Model</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='get'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/get/">Get</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='getall'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/getall/">GetAll</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='fields'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/fields/">Fields</a>
@@ -125,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a class="list-group-item list-group-item-action<?php echo $view=='orderby'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/orderby/">OrderBy</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='joins'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/joins/">Joins</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='relations'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/relations/">Relations</a>
-                            <a class="list-group-item list-group-item-action<?php echo $view=='model'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/model/">Model</a>
+                            <a class="list-group-item list-group-item-action<?php echo $view=='filters'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/page/filters/">Filters</a>
                             <a class="list-group-item list-group-item-action<?php echo $view=='listtables'?' active':''?>" href="<?php echo BASEWEB_PATH?>/sdemo/listtables/">ListTables</a>
                         </div>
                     </div>

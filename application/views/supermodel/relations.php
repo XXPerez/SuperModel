@@ -18,7 +18,7 @@
                 <pre>
 $this->has_one['RELATION_NAME'] = array('FOREIGN_MODEL', 'FOREIGN_FIELD', 'LOCAL_FIELD');
 </pre>
-                Example on CityModel contruct:
+                Example on CityModel construct:
                 <pre>
 $this->has_one['country'] = array('CountryModel', 'CountryCode', 'Code');
 </pre>
